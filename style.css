@@ -1,0 +1,49 @@
+body {
+background-color: rgba(185, 255, 182, 0.527);
+}
+
+.calculator-grid {
+display: grid;
+justify-content: center;
+min-height: 100vh;
+grid-template-columns: repeat(4, 150px);
+}
+
+.calculator-grid > button {
+cursor: pointer;
+font-size: 30px;
+border: 2px solid rgb(10, 92, 21);
+outline: none;
+background-color: rgba(255, 255, 255, 0.75);
+}
+
+.calculator-grid > button:hover {
+background-color: rgba(161, 255, 161, 0.9);
+}
+
+.span-two {
+grid-column: span 2;
+background-color: rgba(255, 255, 255, 0.75);
+}
+
+.output {
+grid-column: 1 / -1;
+background-color: rgba(4, 32, 1, 0.75);
+display: flex;
+align-items: flex-end;
+justify-content: space-around;
+flex-direction: column;
+padding: 25px;
+word-wrap: break-word;
+word-break: break-all;
+}
+
+.output .previous-operand {
+color: rgba(255, 255, 255, 0.75);
+font-size: 25px;
+}
+
+.output .current-operand {
+color: white;
+font-size: 50px;
+}
